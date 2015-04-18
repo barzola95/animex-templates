@@ -1,0 +1,165 @@
+@import "normalize.styl"
+@import "icon.styl"
+
+.articles
+	padding 1em
+	background-image url('../images/section-fondo.jpg')
+	background-repeat no-repeat
+	background-size cover
+	overflow hidden
+
+.articles-description
+	margin 0 .5em 0 0
+	
+.articles-list
+	background #ffff
+	border-radius .3em
+	padding .2em
+	margin-bottom 1em
+
+.articles-image
+	width 100%
+
+.articles-image-container
+	margin 0 1em 0 0
+	float left
+	width 100%
+
+
+.articles-text
+	font-size .9em
+
+.articles-title
+	font-weight 300
+	margin .5em 0
+	color #3498db
+
+.footer
+	background #34495e
+	color white
+	text-align center
+	padding 1em
+	border-top rgba(0,0,0,.5)
+	
+.footer-form
+	width 10em
+	text-align left
+	padding .5em
+	display inline-block
+
+.footer-form-title
+	margin 0 0 .5em 0
+	font-weight 200
+			
+.footer-information
+	margin-right 1.5em
+	margin-top 5em
+	vertical-align top
+	
+.footer-input,
+.footer-text
+	width 100%
+	color #000
+	padding .2em
+	border 0
+	border-radius .3em
+	margin-bottom .5em
+
+	
+.footer-link 
+	display block
+	color white
+	text-decoration none
+	margin-bottom .5em
+
+.footer-submit
+	color #000
+	background #bdc3c7
+	border-radius .3em
+	border 0	
+	
+.footer-text
+	resize none	
+	height 5em
+			
+.header
+	background-image url('../images/header-fondo.jpg')
+	background-repeat no-repeat
+	background-size cover
+	color white
+	overflow hidden
+	text-align center
+	border-bottom 5px solid rgba(5,5,5,.5)
+
+.header-title
+	margin .5em 0
+
+.inline-block
+	display inline-block
+
+
+.nav
+	background rgba(0,0,0,.5)
+	
+
+.nav-item
+	display inline-block
+	margin .5em 1em
+
+.nav-link
+	text-decoration none
+	color white 
+	
+.nav-list
+	list-style none
+	margin 0
+	padding 1em
+
+.search-form
+	position relative
+	width 80%
+	margin 0 auto
+	color #000
+
+.search-icon
+	position absolute
+	top 2.5em
+	right .1em
+	color rgba(0,0,0,.5)
+	border-left 1px solid #000
+	padding 0 0 0 5px
+	-webkit-transition .5s
+	
+.search-icon:hover
+		cursor pointer
+		color #3498db
+
+.search-input
+	padding .5em .1em .5em .5em 
+	border-radius .5em
+	border 0
+	margin 2em 0
+	width 100%
+
+@media screen and (min-width:800px)
+	.search-form
+		width 30%
+	
+	.articles-image-container
+		width 30%
+	
+	.articles-list
+		width 48%
+		float left
+		
+	.articles-list:nth-child(odd)
+		margin-right 2%
+	
+	.footer-form
+		width 15em
+
+@media screen and (min-width:1080px)
+	.articles-text
+		font-size 1em
+			
+
