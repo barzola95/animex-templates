@@ -1,12 +1,39 @@
 @import "normalize.styl"
 @import "icon.styl"
 
+a
+	text-decoration none 
+
 .articles
 	padding 1em
 	background-image url('../images/section-fondo.jpg')
 	background-repeat no-repeat
 	background-size cover
 	overflow hidden
+
+.articles-blog
+	color rgba(0,0,0,.8)
+	margin-top .5em
+	img
+		width 100%
+	.container-video
+		height 0
+		overflow hidden
+		padding-bottom 56.25%
+		padding-top 30px
+		position relative
+		iframe,
+		embed,
+		object,
+		video
+			height 100%
+			left 0
+			position absolute
+			top 0
+			width 100%
+
+.articles-date
+	color #1AFF9D
 
 .articles-description
 	margin 0 .5em 0 0
@@ -16,7 +43,10 @@
 	border-radius .3em
 	padding .2em
 	margin-bottom 1em
-
+	a 
+		text-decoration underline
+		color #3498db
+	
 .articles-image
 	width 100%
 
@@ -25,6 +55,13 @@
 	float left
 	width 100%
 
+.articles-main
+	background #fff
+	width 80%
+	margin 0 auto
+	text-align center
+	padding 1em
+	border-radius .2em
 
 .articles-text
 	font-size .9em
@@ -33,16 +70,21 @@
 	font-weight 300
 	margin .5em 0
 	color #3498db
-
+	
+.comentario
+	margin 2em auto
+	border 3px solid #34495e
+	border-radius 2px
+	max-width 40em
+		
 .footer
 	background #34495e
 	color white
 	text-align center
 	padding 1em
-	border-top rgba(0,0,0,.5)
+	border-top 5px solid rgba(0,0,0,.5)
 	
 .footer-form
-	width 10em
 	text-align left
 	padding .5em
 	display inline-block
@@ -53,7 +95,7 @@
 			
 .footer-information
 	margin-right 1.5em
-	margin-top 5em
+	margin-top 2em
 	vertical-align top
 	
 .footer-input,
@@ -154,6 +196,9 @@
 		
 	.articles-list:nth-child(odd)
 		margin-right 2%
+	
+	.footer-information
+		margin-top 5em
 	
 	.footer-form
 		width 15em
