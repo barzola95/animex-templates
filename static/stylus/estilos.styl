@@ -1,3 +1,4 @@
+//Esta ordenado alfabeticamente y se usa clases 
 @import "normalize.styl"
 @import "icon.styl"
 
@@ -44,7 +45,6 @@ a
 	padding .2em
 	margin-bottom 1em
 	a 
-		text-decoration underline
 		color #3498db
 	
 .articles-image
@@ -54,6 +54,7 @@ a
 	margin 0 1em 0 0
 	float left
 	width 100%
+	
 
 .articles-main
 	background #fff
@@ -71,32 +72,43 @@ a
 	margin .5em 0
 	color #3498db
 	
-.comentario
-	margin 2em auto
+.comment
+	margin 1em auto
 	border 3px solid #34495e
 	border-radius 2px
 	max-width 40em
-		
+	display none
+
+.comment-title
+	background	#34495e
+	padding .5em
+	color white
+
 .footer
 	background #34495e
 	color white
 	text-align center
-	padding 1em
 	border-top 5px solid rgba(0,0,0,.5)
+	padding .5em
 	
 .footer-form
 	text-align left
 	padding .5em
-	display inline-block
+	margin 0 auto
+	width 80%
 
+
+.footer-form-information
+	margin-top .5em
+	color #2980b9
+			
 .footer-form-title
 	margin 0 0 .5em 0
 	font-weight 200
 			
 .footer-information
-	margin-right 1.5em
-	margin-top 2em
 	vertical-align top
+	margin-top 1em
 	
 .footer-input,
 .footer-text
@@ -157,6 +169,15 @@ a
 	margin 0
 	padding 1em
 
+.plugin-social
+	ul
+		margin 0
+		padding 0
+		li
+			display inline-block
+			vertical-align top 
+			margin .5em .5em
+			
 .search-form
 	position relative
 	width 80%
@@ -196,15 +217,19 @@ a
 		
 	.articles-list:nth-child(odd)
 		margin-right 2%
-	
-	.footer-information
-		margin-top 5em
-	
-	.footer-form
-		width 15em
 
+	.comment
+		display block
+	
+	.comment-title
+		display block		
+		
 @media screen and (min-width:1080px)
 	.articles-text
 		font-size 1em
+		
+	.footer-form
+		width 50%	
+		
 			
 

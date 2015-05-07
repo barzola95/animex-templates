@@ -6,6 +6,8 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
+	<script src="http://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0&appId=590196531083073"></script>
+	<script src="https://platform.twitter.com/widgets.js"></script>
 	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script src="../static/js/main.js"></script>
 </head>
@@ -25,9 +27,19 @@
 			</ul>
 		</nav>
 		<h1 class="header-title">Animex</h1>
+		<!-- Plugin Sociales -->
+		<div class="plugin-social">
+			<ul>
+				<!-- Solo cambian el dominio http://misitio.com por el dominio de su pagina-->
+				<li><fb:like href="http://misitio.com" send="false" layout="button_count" font="tahoma"></fb:like></li>
+				<li><a class="twitter-share-button" href="https://twitter.com/share"></a></li>
+				<!-- Al igual que el anterior cambien el https://twitter.com/bazola95 por su twitter -->
+				<li><a class="twitter-follow-button" href="https://twitter.com/barzola95" data-show-count="false" data-lang="es"></a></li>
+			</ul>
+		</div>
 		<form class="search-form" id="search-form">
 			<span class="icon-search search-icon" id="lens"></span>
-			<input type="text" id="search" placeholder="Buscar" name="search" class="search-input" />
+			<input type="text" id="search" placeholder="Buscar" name="search" class="search-input"  />
 		</form>
 	</header>
 	<section class="articles">
@@ -49,17 +61,21 @@
 				</div>
 				</section>
 			</div>
-			<div class="comentario">
-			    <div id="fb-root"></div>
-				<script src="http://connect.facebook.net/es_LA/all.js#xfbml=1"></script>	
-			    <div class="fb-comments" data-href="http://misitio.com" data-numposts="5" data-colorscheme="light"></div>
+			<div class="comment">
+				<div class="comment-title">
+					Comentario por Facebook
+				</div>
+				<!--Caja de comentarios de facebook -->
+				<!-- Solo cambian el dominio http://misitio.com por el dominio de su pagina-->
+				<fb:comments href="http://misitio.com" numposts="5" width="590px"></fb:comments>
 			</div>
 		</div>
 	</section>
 	<footer class="footer">
-		<div class="footer-information inline-block">
+		<div class="footer-information">
 			autor <a href="#" class="footer-link">@barzola95</a>
 		</div>
+		<div class="footer-form-information">Utilize el formulario contacto responsablemente por ejemplo si hay un error en los link del sitio</div> 
 		<form class="footer-form">
 			<h3 class="footer-form-title">Contactame</h3>
 			<label for="name-contact" class="footer-label">Nombre </label>
