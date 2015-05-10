@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Animex</title>
 	<meta charset="utf-8"/>
+	<title>Animex</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Animex el mejor sitio anime">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
 	<script src="http://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0&appId=590196531083073"></script>
@@ -73,10 +74,16 @@
 	</section>
 	<footer class="footer">
 		<div class="footer-information">
-			autor <a href="#" class="footer-link">@barzola95</a>
+			<p>autor</p>
+			<p>Boris Barzola Fariño</p>
+			<p>Sigueme</p>
+			<p>
+				<a href="https://www.facebook.com/borisbarzola95" target="_blank"><span class="icon-facebook social-icon"></span></a>
+				<a href="https://github.com/barzola95" target="_blank"><span class="icon-github social-icon"></span></a>
+				<a href="https://twitter.com/barzola95" target="_blank"><span class="icon-twitter social-icon"></span></a>
+			</p>
 		</div>
-		<div class="footer-form-information">Utilize el formulario contacto responsablemente por ejemplo si hay un error en los link del sitio</div> 
-		<form class="footer-form">
+		<form class="footer-form" id="footer-form">
 			<h3 class="footer-form-title">Contactame</h3>
 			<label for="name-contact" class="footer-label">Nombre </label>
 			<input type="text" id="name-contact" placeholder="Nombre" name="name" class="footer-input" />
@@ -85,6 +92,9 @@
 			<textarea id="motivo-contact" placeholder="Motivo" class="footer-text"></textarea>
 			<button type="submit" class="footer-submit">Contactame</button>	
 		</form>
+		<div class="footer-form-information">Utilize el formulario contacto responsablemente por ejemplo si hay un error en los link del sitio</div>
+		<a href="#" id="show-form" class="show-form">Ver Formulario de contacto</a>
+		<a href="#" id="hide-form" class="hide-form">Ocultar Formulario de contacto</a>
 	</footer>
 </body>
 </html>
